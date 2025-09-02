@@ -1,4 +1,3 @@
-
 "use client";
 import Link from "next/link";
 
@@ -14,12 +13,25 @@ export default function Hero() {
           IRON<span className="text-red-600">GYM</span>
         </h1>
 
-        <ul className="hidden md:flex space-x-10 text-lg font-medium">
-          <li><Link href="#" className="hover:text-red-600 transition">HOME</Link></li>
-          <li><Link href="#" className="hover:text-red-600 transition">SERVICE</Link></li>
-          <li><Link href="#" className="hover:text-red-600 transition">TRAINERS</Link></li>
-          <li><Link href="#" className="hover:text-red-600 transition">TESTIMONIAL</Link></li>
-          <li><Link href="#" className="hover:text-red-600 transition">CONTACT US</Link></li>
+        <ul className="hidden md:flex space-x-10 text-sm font-medium">
+          <li>
+            <Link href="/" className="hover:text-red-600 transition text-red-600">HOME</Link>
+          </li>
+          <li>
+            <Link href="/services" className="hover:text-red-600 transition">SERVICES</Link>
+          </li>
+          <li>
+            <Link href="/About" className="hover:text-red-600 transition">ABOUT US</Link>
+          </li>
+          <li>
+            <Link href="/trainers" className="hover:text-red-600 transition">TRAINERS</Link>
+          </li>
+          <li>
+            <Link href="/testimonials" className="hover:text-red-600 transition">TESTIMONIALS</Link>
+          </li>
+          <li>
+            <Link href="/Contact" className="hover:text-red-600 transition">CONTACT US</Link>
+          </li>
         </ul>
 
         <button className="bg-red-600 px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition">
@@ -42,32 +54,32 @@ export default function Hero() {
             LET’S JOIN NOW
           </button>
 
-        <div className="flex items-center mt-8">
-  {/* Box 1 */}
-  <div className="text-center px-6">
-    <h2 className="text-3xl font-bold text-red-500">20+</h2>
-    <p className="text-gray-400 text-sm">Years of Experience</p>
-  </div>
+          {/* Stats Section */}
+          <div className="flex items-center mt-8">
+            {/* Box 1 */}
+            <div className="text-center px-6">
+              <h2 className="text-3xl font-bold text-red-500">20+</h2>
+              <p className="text-gray-400 text-sm">Years of Experience</p>
+            </div>
 
-  {/* Divider */}
-  <div className="w-px h-12 bg-gray-300"></div>
+            {/* Divider */}
+            <div className="w-px h-12 bg-gray-300"></div>
 
-  {/* Box 2 */}
-  <div className="text-center px-6">
-    <h2 className="text-3xl font-bold text-red-500">15K+</h2>
-    <p className="text-gray-400 text-sm">Members Join</p>
-  </div>
+            {/* Box 2 */}
+            <div className="text-center px-6">
+              <h2 className="text-3xl font-bold text-red-500">15K+</h2>
+              <p className="text-gray-400 text-sm">Members Join</p>
+            </div>
 
-  {/* Divider */}
-  <div className="w-px h-12 bg-gray-300"></div>
+            {/* Divider */}
+            <div className="w-px h-12 bg-gray-300"></div>
 
-  {/* Box 3 */}
-  <div className="text-center px-6">
-    <h2 className="text-3xl font-bold text-red-500">14K+</h2>
-    <p className="text-gray-400 text-sm">Happy Members</p>
-  </div>
-</div>
-
+            {/* Box 3 */}
+            <div className="text-center px-6">
+              <h2 className="text-3xl font-bold text-red-500">14K+</h2>
+              <p className="text-gray-400 text-sm">Happy Members</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
