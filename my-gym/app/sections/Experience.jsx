@@ -22,15 +22,17 @@ export default function Experience() {
           <p className="mt-6 text-gray-300 text-sm leading-relaxed">
             In quisque nunc dictumst etiam pellentesque et. Vel malesuada diam
             lorem tellus. Amet mauris feugiat ipsum natoque odio donec. Sit at
-            locus consequat justo odio condimentum dui. Faucibus id blandit feugiat
-            mi tellus sit etiam donec aliquam. Dictumst egestas ut facilisi vel.
+            locus consequat justo odio condimentum dui. Faucibus id blandit
+            feugiat mi tellus sit etiam donec aliquam. Dictumst egestas ut
+            facilisi vel.
           </p>
 
           <p className="mt-4 text-gray-300 text-sm leading-relaxed">
             Sem consequat fermentum pellentesque risus purus quis gravida. Nulla
-            porttitor ultrices facilisi non commodo diam morbi cursus eu. Semper ut in
-            mauris gravida id cursus urna. Magnis vulputate orci risus felis eget lectus
-            morbi. Et cursus mauris condimentum pretium arcu sed dignissim.
+            porttitor ultrices facilisi non commodo diam morbi cursus eu. Semper
+            ut in mauris gravida id cursus urna. Magnis vulputate orci risus felis
+            eget lectus morbi. Et cursus mauris condimentum pretium arcu sed
+            dignissim.
           </p>
 
           {/* Button */}
@@ -40,38 +42,21 @@ export default function Experience() {
         </div>
 
         {/* Right Image with borders */}
-        <div className="relative flex justify-center">
-          {/* Image */}
+        <div className="relative w-fit mx-auto">
+          {/* Main Image */}
           <Image
             src="/Images/Place.png"
             alt="Gym Place"
-            width={350}
-            height={300}
-            className="rounded-lg shadow-lg relative z-10"
+            width={400}
+            height={400}
+            className="relative z-10 object-cover"
           />
 
-          {/* Top + Left + Right red border */}
-          <div
-            className="absolute border-t border-l border-r border-red-600"
-            style={{
-              width: "334px",
-              height: "496px",
-              bottom: "-10px",
-              left: "60px",
-            }}
-          ></div>
+          {/* Red Border (Top + Right + Bottom + Left) */}
+          <div className="absolute top-[-40px] left-[-50px] w-100 h-full border-1 border-red-600 z-0"></div>
 
-          {/* Right side white border (square bottom) */}
-          <div
-            className="absolute border-l  border-white"
-            style={{
-              height: "496px",
-              width: "4px",
-              top: "0",
-              right: "-10px",
-            }}
-          ></div>
-
+          {/* White Border (Right side only) */}
+          <div className="absolute bottom-[-40px] right-[-50px] h-full w-100 border-1 border-white z-0"></div>
         </div>
       </div>
     </section>
